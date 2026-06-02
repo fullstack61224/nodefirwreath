@@ -1,3 +1,3 @@
-module rate_limiter_75f00b
+module rate_limiter_a2357f
 
 go 1.20
